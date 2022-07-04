@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Expenses chart component</title>
+
+
+</head>
+
+<body>
+  <div class="content">
+    <div class="balance">
+      <div class="balance-text">
+        <div>My balance</div>
+        <div class="bold medium">$921.48</div>
+      </div>
+      <div class="balance-logo">
+        <svg width="72" height="48" viewBox="0 0 72 48" xmlns="http://www.w3.org/2000/svg">
+          <g fill="none" fill-rule="evenodd">
+            <circle fill="#382314" cx="48" cy="24" r="24" />
+            <circle stroke="#FFF" stroke-width="2" cx="24" cy="24" r="23" />
+          </g>
+        </svg>
+      </div>
+
+    </div>
+    <div class="chart-outer">
+      <div class="chart-inner">
+        <div class="bold medium">Spending - Last 7 days</div>
+        <div id="chart"></div>
+        <div id="chart-days"></div>
+      </div>
+      <div class="footer">
+        <div class="footer-left">
+          <div class="light">Total this month</div>
+          <div class="large bold">$478.33</div>
+        </div>
+        <div class="footer-right">
+          <div class="bold">+2.4%</div>
+          <div class="light">from last month</div>
+        </div>
+      </div>
+    </div>
+    <div id="spending" class="bold">$52.66</div>
+  </div>
+
+
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+  <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>

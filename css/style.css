@@ -1,0 +1,161 @@
+:root {
+  --cream:hsl(27, 66%, 92%);
+  --cyan: hsl(186, 34%, 60%);
+  --light-cyan: hsl(186, 34%, 73%);
+  --orange: hsl(10, 79%, 65%);
+  --light-orange: hsl(10, 79%, 75%);
+  --dark-brown: hsl(25, 47%, 15%);
+  --light-brown: hsl(28, 10%, 53%);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--cream);
+  height: 100vh;
+  font-size: 13px;
+  color: var(--dark-brown)
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.medium {
+  font-size: 1.8em;
+}
+
+.large {
+  font-size: 2.5em;
+}
+
+.content {
+  width: 100%;
+  max-width: 420px;
+}
+
+.light {
+  color: var(--light-brown);
+}
+
+.balance {
+  border-radius: 12px;
+  padding: 18px 22px;
+  background-color: var(--orange);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.balance-logo {
+  display: flex;
+  align-items: center;
+}
+
+.balance-logo svg {
+  width: 50px;
+}
+
+.chart-outer {
+  margin-top: 16px;
+  padding: 30px;
+  border-radius: 12px;
+  background-color: white;
+}
+
+.chart-inner {
+  margin-bottom: 36px;
+}
+
+#chart {
+  display: flex;
+  /* width: 100%; */
+  justify-content: space-between;
+  margin: 5px 0px;
+  margin-top: 32px;
+  height: 120px;
+  align-items: flex-end;
+}
+
+.chart-bar {
+  background-color: var(--orange);
+  border-radius: 4px;
+  width: 11%;
+  height: 0px; 
+  transition: height 0.4s ease-out;
+}
+
+.chart-bar.today {
+  background-color: var(--cyan);
+}
+
+.chart-bar:hover {
+  background-color: var(--light-orange);
+}
+
+.chart-bar.today:hover {
+  background-color: var(--light-cyan);
+}
+
+#chart-days{
+  display: flex;
+  justify-content: space-between;
+  color: var(--light-brown);
+  height: 0px;
+  font-size: 0.9em;
+}
+
+#chart-days > div {
+  width: 11%;
+  text-align: center;
+}
+
+.footer {
+ display: flex;
+ justify-content: space-between;
+ padding: 18px 0 0 0;
+ border-top: 1px solid var(--cream);
+}
+
+.footer-right {
+  text-align: right;
+  align-self: flex-end;
+}
+
+#spending {
+  visibility: hidden;
+  background-color: var(--dark-brown);
+  color: white;
+  padding: 3px 6px;
+  border-radius: 4px;
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+#spending.show {
+  visibility: visible;
+}
+
+@media (max-width: 480px) {
+  body {
+    padding: 0 15px;
+  }
+  .chart-outer {
+    padding: 20px;
+  }
+ }
+
